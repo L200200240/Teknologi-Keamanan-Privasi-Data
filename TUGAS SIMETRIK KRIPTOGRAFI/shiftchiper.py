@@ -11,7 +11,7 @@ def encrypt(string, shift):
   
   return cipher
  
-text = ("Tsabitta Najmining Ratri L20200200240")
+text = ("Tsabitta Najmining Ratri L200200240")
 s = int("40")
 print("plain text: ", text)
 print("shift number: ", s)
