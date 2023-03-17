@@ -23,10 +23,10 @@ def decryption(encrypt_text, key):
   return("" . join(orig_text)) 
 if __name__ == "__main__": 
   string = ("Tsabitta Najmining Ratri L200200240")
-  keyword = ("240")
-  key = generateKey(string, keyword) 
+  key word = ("240")
+  key = generateKey(string, key word) 
   encrypt_text = encryption(string,key)
   print("Plain text :", string)
-  print("Keyword :", keyword)
+  print("key word :", key word)
   print("Encrypted message:", encrypt_text) 
   print("Decrypted message:", decryption(encrypt_text, key)) 

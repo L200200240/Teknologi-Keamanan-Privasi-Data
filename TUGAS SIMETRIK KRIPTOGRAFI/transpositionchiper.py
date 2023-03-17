@@ -1,13 +1,13 @@
 import math
 
 def encryptMessage(key, message):
-    cipherText = [""] * key
+    chiperText = [""] * key
     for col in range(key):
         pointer = col
         while pointer < len(message):
-            cipherText[col] += message[pointer]
+            chiperText[col] += message[pointer]
             pointer += key
-    return "".join(cipherText)
+    return "".join(chiperText)
 
 def decryptMessage(key, message):
     numCols = math.ceil(len(message)/key)

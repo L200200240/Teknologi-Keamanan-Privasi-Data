@@ -1,15 +1,15 @@
 def encrypt(string, shift):
  
-  cipher = ''
+  chiper = ''
   for char in string:
     if char == ' ':
-      cipher = cipher + char
+      chiper = chiper + char
     elif  char.isupper():
-      cipher = cipher + chr((ord(char) + shift - 65) % 26 + 65)
+      chiper = chiper + chr((ord(char) + shift - 65) % 26 + 65)
     else:
-      cipher = cipher + chr((ord(char) + shift - 97) % 26 + 97)
+      chiper = chiper + chr((ord(char) + shift - 97) % 26 + 97)
   
-  return cipher
+  return chiper
  
 text = ("Tsabitta Najmining Ratri L200200240")
 s = int("40")

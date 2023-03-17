@@ -14,13 +14,13 @@ def encrypt(plaintext, key, alphabet):
     keyMap = dict(zip(alphabet, key))
     return ''.join(keyMap.get(c.lower(), c) for c in plaintext)
 
-def decrypt(cipher, key, alphabet):
+def decrypt(chiper, key, alphabet):
     keyMap = dict(zip(key, alphabet))
-    return ''.join(keyMap.get(c.lower(), c) for c in cipher)
+    return ''.join(keyMap.get(c.lower(), c) for c in chiper)
 
-cipher = encrypt(plaintext, key, alphabet)
+chiper = encrypt(plaintext, key, alphabet)
 
 print("Plain text :", plaintext)
 print("key :", key)
-print("Chiper :", cipher)
-print("Decrypted :", decrypt(cipher, key, alphabet))
+print("Chiper :", chiper)
+print("Decrypted :", decrypt(chiper, key, alphabet))
